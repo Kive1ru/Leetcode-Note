@@ -5,6 +5,5 @@
 因为是有序数组，所以可以使用双指针的方法，一个指针指向数组的头，一个指针指向数组的尾，然后向中间移动，直到找到答案。如果两个指针指向的元素的和大于目标值，那么尾指针向前移动，如果两个指针指向的元素的和小于目标值，那么头指针向后移动。（因为两端之和如果小于目标，说明numbers[left]太小了。两端之和如果大于目标，说明numbers[right]太大了。）
 
 ### 复杂度
-Time Complexity: O(n)
-Space Complexity: O(1)
-```python
+Time Complexity: O(n) 一个while loop，两个指针向中间移动，所以是O(n)
+Space Complexity: O(1) 全是常数空间，所以是O(1)
