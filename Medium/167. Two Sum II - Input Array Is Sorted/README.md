@@ -7,3 +7,14 @@
 ### 复杂度
 Time Complexity: O(n) 一个while loop，两个指针向中间移动，所以是O(n)
 Space Complexity: O(1) 全是常数空间，所以是O(1)
+
+
+### Solution
+double pointer
+
+### Approach
+Because it is an ordered array, you can use the double pointer method. One pointer points to the head of the array, and the other points to the tail of the array, and then moves toward the middle until the answer is found. If the sum of the elements pointed to by the two pointers is greater than the target value, then the tail pointer moves forward. If the sum of the elements pointed to by the two pointers is less than the target value, then the head pointer moves backward. (Because if the sum of the two ends is less than the target, it means that numbers[left] is too small. If the sum of the two ends is greater than the target, it means that numbers[right] is too big.)
+
+### the complexity
+Time Complexity: O(n) A while loop, the two pointers move to the middle, so it is O(n)
+Space Complexity: O(1) It’s all constant space, so it’s O(1)
