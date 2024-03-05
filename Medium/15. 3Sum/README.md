@@ -10,7 +10,7 @@ Space Complexity: O(1) 全是常数空间，所以是O(1)
 
 
 ### Solution
-double pointer
+Two pointer
 
 ### Approach
 It can be turned into an ordered array, refer to Medium 167 2sum sorted, and you can use the double pointer method. This question requires that the sum of the three numbers is 0 and must not be repeated. nums[i] + nums[j] + nums[k] = 0 can become nums[j] + nums[k] = -nums[i]. So you can fix one number and then use the double pointer method to find the other two numbers. What needs to be noted here is that after finding a solution, duplicate solutions need to be skipped. Therefore, it is necessary to skip repeated solutions after finding the solution. A pointer points to i+1, a pointer points to the end of the array, and then moves toward the middle until the answer is found. If the sum of the elements pointed to by the two pointers is greater than the target value, then the tail pointer moves forward. If the sum of the elements pointed to by the two pointers is less than the target value, then the head pointer moves backward. (Because if the sum of both ends is less than the target, it means that numbers[left] is too small. If the sum of both ends is greater than the target, it means that numbers[right] is too big.) The optimization step is that if nums[i] + nums[i +1] + nums[i+2] > 0, which means that the following numbers are all greater than 0, and there is no solution, so just break. If nums[i] + nums[n-2] + nums[n-1] < 0, it means that the previous numbers are less than 0, there is no solution, and we continue to traverse i+1.
