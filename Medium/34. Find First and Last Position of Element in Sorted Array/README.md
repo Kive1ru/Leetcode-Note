@@ -13,7 +13,7 @@ Space Complexity: O(1) 全是常数空间，所以是O(1)
 Binary Search
 
 ### Approach
-They want to find the start and end positions of target, so you can use a dichotomy to close left and right. left<=right, if target is equal to mid, then record the position of mid in list[0], if target is less than mid, then find right-1 on the left. If target is greater than mid, look for left+1 on the right. Reset right, use the same process again to get list[1], and finally return the record location.
+They want to find the start and end positions of target, so you can use a binary search to close left and right. left<=right, if target is equal to mid, then record the position of mid in list[0], if target is less than mid, then find right-1 on the left. If target is greater than mid, look for left+1 on the right. Reset right, use the same process again to get list[1], and finally return the record location.
 
 ### Complexity
 Time Complexity: O(logn) The time complexity of binary search method is O(logn)  
