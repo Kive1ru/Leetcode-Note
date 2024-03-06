@@ -9,7 +9,7 @@ Space Complexity: O(1) 全是常数空间，所以是O(1)
 
 
 ### Solution
-Binary Search
+Linked list traversal
 
 ### Approach
 The question requires that every k nodes in the list be reversed as a group. This question can use the loop traversal method. Find the length of the list, create a dummy node pointing to the head, each k nodes are a group, and let p0.next point to the first node of this group (refer to question 92). Then start to reverse the nodes of this group, nxt saves the previous node p0.next of the first node of the next group, repeats the reversal operation, and finally returns dummy.next.

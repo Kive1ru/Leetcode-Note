@@ -10,7 +10,7 @@ Space Complexity: O(1) 全是常数空间，所以是O(1)
 
 
 ### Solution
-Binary Search
+Linked list traversal
 
 ### Approach
 The question requires reversing the list, and you can use loop traversal. Use three pointers to point to the current node, the previous node and the next node respectively. Each loop points the next node of the current node to the previous node, and then moves all three pointers back one bit. Finally return to the previous node.

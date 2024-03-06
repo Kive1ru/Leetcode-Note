@@ -10,7 +10,7 @@ Space Complexity: O(1) 全是常数空间，所以是O(1)
 
 
 ### Solution
-Binary Search
+Slow and fast pointers
 
 ### Approach
 The question requires finding whether there is a cycle in the linked list. You can use the method of fast and slow pointers. The fast pointer takes two steps at a time, and the slow pointer takes one step at a time. If there is a loop, the fast pointer will definitely catch up with the slow pointer.
